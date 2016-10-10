@@ -45,6 +45,7 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Sets how many lines of history VIM has to remember
 set history=500
+set nu
 
 " Enable filetype plugins
 filetype plugin on
@@ -60,6 +61,10 @@ let g:mapleader = ","
 
 " Fast saving
 nmap <leader>w :w!<cr>
+
+" Fast move in insert mode
+imap <c-b> <ESC>i
+imap <c-f> <ESC>la
 
 " :W sudo saves the file 
 " (useful for handling the permission-denied error)
