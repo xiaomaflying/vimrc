@@ -65,7 +65,9 @@ nmap <leader>w :w!<cr>
 " Fast move in insert mode
 imap <c-b> <ESC>i
 imap <c-f> <ESC>la
-
+imap <c-k> <ESC>ka
+imap <c-j> <ESC>ja
+"
 " :W sudo saves the file 
 " (useful for handling the permission-denied error)
 command W w !sudo tee % > /dev/null
@@ -219,8 +221,8 @@ map <c-space> ?
 map <silent> <leader><cr> :noh<cr>
 
 " Smart way to move between windows
-map <C-j> <C-W>j
-map <C-k> <C-W>k
+"map <C-j> <C-W>j
+"map <C-k> <C-W>k
 map <C-h> <C-W>h
 map <C-l> <C-W>l
 

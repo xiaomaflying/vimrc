@@ -59,8 +59,8 @@ let g:user_zen_mode='a'
 """"""""""""""""""""""""""""""
 " => snipMate (beside <TAB> support <CTRL-j>)
 """"""""""""""""""""""""""""""
-ino <c-j> <c-r>=snipMate#TriggerSnippet()<cr>
-snor <c-j> <esc>i<right><c-r>=snipMate#TriggerSnippet()<cr>
+"ino <c-j> <c-r>=snipMate#TriggerSnippet()<cr>
+"snor <c-j> <esc>i<right><c-r>=snipMate#TriggerSnippet()<cr>
 
 
 """"""""""""""""""""""""""""""
@@ -167,3 +167,6 @@ nnoremap <silent> <leader>c :call SyntasticCheckCoffeescript()<cr>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:gitgutter_enabled=0
 nnoremap <silent> <leader>d :GitGutterToggle<cr>
+
+let g:syntastic_mode_map = { 'mode': 'active',
+                           \ 'passive_filetypes': ['java'] }
